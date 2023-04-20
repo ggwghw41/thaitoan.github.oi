@@ -1,0 +1,117 @@
+
+@keyframes turn {
+  from {
+  transform: rotate3d(0, 0, 0, 0);
+  }
+  to {
+  transform: rotate3d(1, 1, 0, 360deg);
+  }
+  }
+  .cube {
+  width: 20px;
+  height: 20px;
+  transform-style: preserve-3d;
+  animation: turn 3600ms linear infinite;
+  margin: 50px;
+  }
+  .cube:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+  .face {
+  width: 200px;
+  height: 200px;
+  background: #ff6d00;
+  border: 2px solid rgb(250, 5, 5);
+  position: absolute;
+  opacity: 0.75;
+  transform: translateZ(100px);
+  }
+  .front {
+  transform: translateZ(100px);
+  }
+  .back {
+  transform: translateZ(-100px) rotateY(0deg);
+  }
+  .left {
+  transform: translateX(-100px) rotateY(-90deg);
+  }
+  .right {
+  transform: translateX(100px) rotateY(90deg);
+  }
+  .top {
+  transform: translateY(-100px) rotateX(90deg);
+  }
+  .bottom {
+  transform: translateY(100px) rotateX(-90deg);
+  }
+  .content{
+    background-color: #d30700;
+  }
+ 
+ .thongtin{
+  background-color: aqua;
+ 
+ }
+ html body{
+  margin-top:20px;
+  color: #d30700;
+  text-align: left;
+  background-color: #3e3e3f;   
+  font-size: 20px; 
+}
+.main-body {
+  padding: 15px;
+}
+.card {
+  box-shadow: 0 1px 3px 0 rgba(248, 0, 0, 0.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #ff0000;
+  background-clip: border-box;
+  border: 2px solid rgba(255, 0, 0, 0.125);
+  border-radius: .25rem;
+}
+
+.card-body {
+  border:  2px solid #d30700;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1rem;
+  background-color: #4e4e4e4b;
+
+}
+
+.gutters-sm {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.mb-3, .my-3 {
+  margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+  background-color: #0078f0;
+}
+.h-100 {
+  height: 100%!important;
+}
+.shadow-none {
+  border:  2px solid #d30700;
+  box-shadow: none!important;
+}
+.container {
+  background-color: #3e3e3f;
+
+color: #fc0000;}
